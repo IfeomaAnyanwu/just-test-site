@@ -373,7 +373,7 @@ Slider styles
 } */
 
 #slider-img {
-  min-height: 33.5rem;
+  height: 33.5rem;
   max-width: 80rem;
   position: relative;
   background-size: 100% 116%;
