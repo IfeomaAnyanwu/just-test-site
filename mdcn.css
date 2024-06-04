@@ -1033,17 +1033,6 @@ Management
   outline-offset: 0.3rem;
   object-position: center;
   object-fit: fit;
-
-    animation-name: slide-image;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-delay: -10s; */
-    /* transform: translate3d(-322px, 0px, 0px);
-    transition: all 0.25s ease 0s;
-    width: 16484px; 
-
-*/
 }
 
 #mdcn-management img:hover {
@@ -1060,8 +1049,23 @@ Management
     left: 0;
     transform: translateX(-100%);
   }
-
 }
+
+@media screen and (min-width: 768px) {
+  #mdcn-management {
+    animation-name: slide-image;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: -10s;
+  }
+}
+
+/*
+======================================== 
+Management  MOBILE SCREEN
+========================================
+*/
 
 @media screen and (max-width: 768px) {
   .mdcn-management-section {
