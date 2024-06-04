@@ -14,8 +14,29 @@
   <body>
     <!-- <script src="./mdcn.js"></script> -->
     <header>
-      <!-- Upper nav
+
+      <!-- Toggle for mobile screen
          ============================================= -->
+<!-- <div class="logo-toggle-div">
+<div class="logo-toggle-wrapper">
+
+<a href="https://mdcn.gov.ng/#">
+<img src="/images/mdcn-logo.jpg" alt="MDCN Logo" id="logo" />
+</a>
+ <h3>
+   MEDICAL AND DENTAL<br />
+  COUNCIL OF NIGERIA
+</h3>           
+<button type="button" class="nav-toggle" id="nav-toggle">
+<i class="fas fa-bars"></i>
+</button>
+</div> 
+</div> -->
+
+ <!-- Upper nav
+         ============================================= -->
+
+  
       <nav class="upper-nav">
         <div id="email">
           <p><strong>Email:</strong> info@mdcn.gov.ng</p>
@@ -62,12 +83,17 @@
             MEDICAL AND DENTAL<br />
             COUNCIL OF NIGERIA
           </h3>
+          <button type="button" 
+          id="nav-toggle"
+          class="nav-toggle">
+        <i class="fas fa-bars"></i>
+        </button>
         </div>
 
-        <!--logo-part ends -->
-        <navbar class="lower-list">
-          <ul id="menu">
-            <li>
+        <!--logo-part ends .............-->
+        <navbar class=" lower-list" id="lower-list">
+          <ul id="menu" class="menu ">
+            <li id="home-list">
               <a href="/" class="active"><div class="active first-ul-div">Home</div></a>
             </li>
             <!--------------Home ends------------------>
@@ -216,11 +242,12 @@
         </navbar>
     <!------------lower -nav list-part ends ------------->
       </nav>
+ 
 
     <!-------------lower nav ends ---------------------->
     </header>
     <main>
-    <!---------------slider starts --------------------->
+    <!-----------slider background  starts --------------->
       <div id="slider-background">
         <!-- <div id="slider-wrapper"> -->
          
@@ -229,11 +256,11 @@
              <div id="slider-text"></div>
           </div>
         </div>
-  <!---------slider wrapper ends --------------------->
+  <!---------slider wrapper ends ------------------->
       <!-- </div> -->
   <!------------slider background ends --------------->
 
-  <!------------latest news -------------------->
+ <!------------latest news -------------------->
 <section id="latest-scroll-news-section">
   <div class="latest-scroll-news-container">
     <button id="latest-scroll-news-button" class="btn">Latest Headlines: </button>
@@ -246,9 +273,6 @@
     <a href="#"> MDCN Assessment examination comes up in june 2024</a> 
   </div>
 </section>
-
-
-
 
   <!------------latest news ends --------------->
 
@@ -292,13 +316,18 @@
 <!-----------------other links ends ------------------------->
 <!---------------Link to Remita and others ends --------------->
 <!----------------Registrar Message------------------------->
-<section class="registrar-msg">
+<section id="registrar-msg">
   
   <div class="registrar">
+    <h3 class="title">MEET THE REGISTRAR/CEO</h3><br>
     
-    <img src="/images/registrar.PNG" alt="Registrar photo" />
-    <h3 class="title">MEET THE REGISTRAR</h3>
-    <p class="registrar-name">Dr. Fatima Kyari - MBBS, FWACS, MSc., PhD,  FNAMed</p>
+    <div class="registrar-img-and-name">
+      <img src="/images/registrar.PNG" alt="Registrar photo" id="registrar-pix"/>
+    
+      <p class="registrar-name">Dr. Fatima Kyari - MBBS, FWACS, MSc., PhD,  FNAMed</p>
+    </div>
+    
+    
 
  <p class="float-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, odit perferendis. Voluptas, aperiam autem? Quibusdam maxime aspernatur eaque aperiam, praesentium excepturi in magnam quae quo asperiores illo, vero doloribus sunt neque et at quos incidunt. Praesentium, id! Eaque dolores exercitationem quo non recusandae architecto? Minus voluptatem voluptatum quia placeat rem nam ut vitae porro officia ipsam officiis totam praesentium libero repellat debitis ipsa dolore quod, voluptas iste exercitationem accusantium illum quisquam voluptatibus? Consequatur vero optio quae distinctio, accusamus repellat necessitatibus illo? Itaque consectetur doloremque numquam omnis. Incidunt asperiores numquam, eaque id omnis architecto laborum cum unde neque, doloribus expedita assumenda voluptatem sunt laboriosam natus. Deserunt tempora cupiditate suscipit ipsam esse! Maxime perferendis sapiente id, porro asperiores culpa repellat repellendus pariatur deserunt ipsam rerum illo ea, nulla est minus! Magnam ullam sunt maiores possimus eos amet, corporis impedit inventore beatae reiciendis explicabo in eligendi, quisquam, optio saepe dolores voluptates omnis? Quod? <br>
   <button class="btn" id="moreBtn" onclick="readMoreFunction()">
@@ -415,69 +444,53 @@
 <section class="mdcn-management-section">
 <div class="news-heading news-heading-media">
  <h2>MEDIA HIGHLIGHTS</h2>
+ <p class="media-caption">Click on images for details</p>
 </div>
 
 <div id="mdcn-management">
-  
-  <a href="#"> 
-<img src="/images/registrar-appointment.jpg" alt="" id="mgt7"> </a>
 
   <a href="#"> 
-   <img src="/images/registrar-handover.jpg" alt="" id="mgt8"></a>
+  <img src="/images/nma-meeting-calabar.JPG" alt="" id="mgt6"></a>
+
+  <a href="#"> 
+<img src="/images/registrar-appointment.jpg" alt="" id="mgt7"> 
+</a>
 
    <a href="#">
-  <img src="/images/media-1.jpg" alt="" id="mgt1"></a> 
+  <img src="/images/uath-visit.jpg" alt="" id="mgt1"></a> 
 
   <a href="#"> 
-  <img src="/images/media-4.jpg" alt="" id="mgt2"></a>
+  <img src="/images/nma-president.jpg" alt="" id="mgt2"></a>
 
   <a href="#"> 
-  <img src="/images/media-5.jpg" alt="" id="mgt3"></a>
+  <img src="/images/nuc-visit.jpg" alt="" id="mgt3">
+</a>
 
   <a href="#"> 
-  <img src="/images/media-3.jpg" alt="" id="mgt10"></a>
+  <img src="/images/nuc-boss.jpg" alt="" id="mgt10"></a>
 
   <a href="#"> 
-  <img src="/images/mgt-staff.png" alt="" id="mgt4"></a>
+  <img src="/images/mdcn-mgt.png" alt="" id="mgt4"></a>
 
   <a href="#"> 
-  <img src="/images/media-2.jpg" alt="" id="mgt11"></a>
+  <img src="/images/uath-visit-2.jpg" alt="" id="mgt11"></a>
 
   <a href="#"> 
-  <img src="/images/media-7.jpg" alt="" id="mgt5"></a>
+  <img src="/images/induction-6.jpg" alt="" id="mgt5"></a>
 
-  <a href="#"> 
-  <img src="/images/media-8.jpg" alt="" id="mgt9"></a>
-
-  <a href="#"> 
-  <img src="/images/induction4.jpg" alt="" id="mgt6"></a>
 </div>
-
-
-
 </section>  
-
-
-
-    </main>
-    
-    
-    
-    
-    
+</main>
     
     
 <!------------Footer --------------->
     <footer>
-<!--footer/copyright-->
-
-<div class="inner-footer">
- <div class="outer-footer">
+<div class="outer-footer">
   <div class="outer-footer-center">
-    <div>
+    <div id="mdcn-address-div">
     <span>Medical and Dental Council of Nigeria</span><br><br>
     <p><span>Headquarters:</span>
-      Plot 1102, Cadastral Zone B11, Off Oladipo Diya Road, Behind Prince and Princess Estate,Kaura District Abuja Nigeria
+      Plot 1102, Cadastral Zone B11, <br>Off Oladipo Diya Road, Behind Prince and Princess Estate,<br> Kaura District Abuja Nigeria
     </p><br><br>
     <p>
       <span>Phone:</span>
@@ -488,38 +501,69 @@
     <p>
     <span>Nigerian Doctors in Diasporal</span><br>
     Please Call:  +2348023975725 <br>
-    Email Address: info@mdcn.gov.ng  OR registration@mdcn.gov.ng
+    Email Address: info@mdcn.gov.ng  OR <br>registration@mdcn.gov.ng
     </p>
   </div>
 
-  <div>
-    <p><span> Quick Links</span><br>
+  <div id="quick-links-div">
+    <p><span> Quick Links</span> </p><br>
     <a href="https://mdcn.gov.ng/recent-news">Recent News </a>
+    <a href="https://mdcn.gov.ng/frequently-asked-questions" >FAQ </a>
+    <a href="https://mdcn.gov.ng/frequently-asked-questions" >Create Account </a>
+    <a href="https://mdcn.gov.ng/frequently-asked-questions" >Sign In </a>
+    <a href="https://mdcn.gov.ng/frequently-asked-questions" >Contact Us </a>
   <a href="https://mdcn.gov.ng/page/about-us/privacy-policy">Privacy Policy
    </a>
-  <a href="https://mdcn.gov.ng/frequently-asked-questions" >FAQ </a>
-    </p>
+   <a href="https://mdcn.gov.ng/frequently-asked-questions" >Support </a>
+   <a href="https://mdcn.gov.ng/frequently-asked-questions" >Staff Mail </a>
+  
   </div>
 
-  <div>
-    <p></p> 
-    <p><span>Have any issues with Web Portal Registration </span><br>
-    Contact Support on: 09130519156,09077062051 and use Email Address Below
-    Email Address: support@mdcn.gov.ng</p>
+  <div id="issues-div">
+    <p><span>Have any issues with Web Portal Registration </span><br><br>
+    Contact Support on: <br>09130519156 or <br>
+    09077062051 or <br> 
+    support@mdcn.gov.ng</p>
   </div>
 </div>
 </div>
 <!--Outer footer center ends-->
-  <p class="copyright">
-   &copy; 2024 Medical and Dental Council of Nigeria
+
+
+<div class="inner-footer">
+  
+  <div class="inner-footer-center">
+    <p class="copyright">
+   &copy; 2024 Medical and Dental Council of Nigeria.
   <span id="date"></span> All Rights Reserved.
   </p>
-     
+  <!--footer icons-->
+      <ul class="footer-icons">
+        <!--single icon-->
+        <li>
+          <a href="https://www.facebook.com/medicalcouncilnigeria/" target="_blank" class="footer-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <!--end of single icon-->
+        <!--single icon-->
+        <li>
+          <a href="https://twitter.com/mdcnofficial?s=21&t=hRvBuoaYq35dxqAPSy85jA" target="_blank" class="footer-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <!--end of single icon-->
+      </ul>
+      <!--end of footer icons-->  
+      </div>
+      </div>
+      <!--end of inner-footer-center-->  
 </div>
-    
-    <!--end of footer/copyright-->
-      
-    </footer>
+ <!--end of inner footer-->    
+
+ 
+
+</footer>
 
 
 
