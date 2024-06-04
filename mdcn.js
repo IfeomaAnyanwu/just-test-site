@@ -14,7 +14,21 @@ for (let i = 0; i < list.length; i++) {
 
 /*
 ======================================== 
-Sticky navbar
+Nav toggle for MOBILE SCREEN
+========================================
+*/
+
+// select button and links
+const toggleBtn = document.getElementById("nav-toggle");
+const lowerNavContainer = document.getElementById("lower-list");
+// // add event listener
+toggleBtn.addEventListener("click", () => {
+  lowerNavContainer.classList.toggle("show-links");
+});
+
+/*
+======================================== 
+Sticky navbar for Biggest Screen
 ========================================
 */
 
@@ -36,7 +50,8 @@ window.addEventListener("scroll", function () {
 const backgroundImages = [
   {
     text: "maintains  register of persons licencsed to practice medicine, dentistry and alternative-medicine in nigeria",
-    image: "url('/images/registrar-appointment.jpg')",
+    image:
+      "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/registrar-appointment.jpg')",
   },
   {
     text: "makes policies on medicine, dentistry and alternative medicine practice in nigeria",
@@ -135,3 +150,12 @@ function readMoreFunction() {
     moreText.style.display = "inline";
   }
 }
+
+/*
+======================================== 
+Copy Right Date
+========================================
+*/
+// select span
+const date = (document.getElementById("date").innerHTML =
+  new Date().getFullYear());
