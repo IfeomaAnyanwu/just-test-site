@@ -1049,50 +1049,17 @@ Management
     left: 0;
     transform: translateX(-100%);
   }
-
-  /* 0% {
-    transform: translateX(800px);
-  }
-
-  25% {
-    transform: translateX(-50px);
-  }
-
-  50% {
-    transform: translateX(-100px);
-  }
-
-  75% {
-    transform: translateX(-150px);
-  }
-
-  100% {
-    transform: translateX(-200px);
-  } */
 }
 
 @media screen and (max-width: 768px) {
+  .mdcn-management-section {
+    width: 90vw;
+  }
+
   #mdcn-management {
-    /* position: absolute;
-    right: 15%;
-    bottom: 1rem;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgb(0 0 0 / 60%); */
-    /* animation: slide-image 1s 1 ease-in infinite; */
     flex-direction: column;
-    animation-name: slide-image;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-delay: -10s;
-    /* transform: translate3d(-322px, 0px, 0px);
-    transition: all 0.25s ease 0s;
-    width: 16484px; */
+    justify-content: center;
+    align-items: center;
   }
 }
 
