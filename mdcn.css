@@ -113,27 +113,33 @@ section {
 
 /*
 =============== 
-Nav  Styles
+Nav  Styles  Biggest Screen
 ===============
 */
 
 nav {
-  width: 80vw;
   margin: 0 auto;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
 }
 
 .upper-nav {
-  font-size: 0.84rem;
-  justify-content: space-around;
-  gap: 9rem;
+  width: 77.5vw;
+  font-size: 0.83rem;
+  justify-content: space-between;
+  /* gap: 12.5rem; */
   height: 2vh;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
 }
 
 .lower-nav {
   width: 90vw;
   height: 5vh;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+  padding-top: 1.5rem;
   z-index: 7;
 }
 
@@ -141,6 +147,7 @@ nav {
   text-transform: lowercase;
   font-weight: normal;
   font-size: 0.9rem;
+  /* margin-left: 1.2rem; */
 }
 
 #email strong {
@@ -152,14 +159,6 @@ a {
   color: var(--clr-mdcnbody);
 }
 
-.upper-nav,
-.lower-nav {
-  display: flex;
-  font-weight: bold;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
 .top-links > ul,
 .lower-list > ul {
   display: flex;
@@ -168,6 +167,10 @@ a {
 
 .top-links > ul li {
   border-left: 1px solid var(--clr-grey-8);
+}
+
+.top-links > ul li:hover {
+  border-left: 1px solid var(--clr-white);
 }
 
 .top-links > ul {
@@ -191,6 +194,7 @@ a {
 .lower-list {
   font-size: 0.7rem;
   letter-spacing: 0.05rem;
+  padding-bottom: 1rem;
 }
 
 /*
@@ -216,7 +220,7 @@ a {
 
 /*
 =============== 
-Drop Down Styles
+Drop Down Styles  Biggest Screen
 ===============
 */
 /* nav list container (ul)*/
@@ -234,23 +238,6 @@ Drop Down Styles
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-}
-
-/* lower nav list drop down container*/
-.lower-list ul ul {
-  position: absolute;
-  top: 100%;
-  display: none;
-  border-top: 2px solid var(--clr-nigeriaGreen-2);
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  width: 22rem;
-  box-shadow: 0px 16px 16px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* lower drop down list*/
-.lower-nav ul ul li {
-  display: block;
 }
 
 /* lower  nav list hover*/
@@ -279,6 +266,23 @@ Drop Down Styles
   border-left: 1px solid var(--clr-white);
 }
 
+/* lower nav list drop down container*/
+.lower-list ul ul {
+  position: absolute;
+  top: 100%;
+  display: none;
+  border-top: 2px solid var(--clr-nigeriaGreen-2);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  width: 22rem;
+  box-shadow: 0px 16px 16px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* lower drop down list*/
+.lower-nav ul ul li {
+  display: block;
+}
+
 /* display dropdow container on  nav list hover */
 .lower-list ul li:hover ul {
   display: block;
@@ -294,7 +298,7 @@ Drop Down Styles
 
 /*
 =============== 
-Mega Menu
+Mega Menu    Biggest Screen
 ===============
 */
 
@@ -314,7 +318,7 @@ Mega Menu
   color: black;
 }
 
-/* remove border on top Regisraion ul applied o firs level ul */
+/* remove border on top Registraion ul applied to first level ul */
 #mega-first-ul {
   border-top: none;
   box-shadow: none;
@@ -341,9 +345,174 @@ Mega Menu
   clear: both;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+.logo-toggle-div {
+  display: none;
+}
+
 /*
 =============== 
-Slider styles
+Nav  Styles  Mobile Screen
+===============
+*/
+
+@media screen and (max-width: 768px) {
+  /* Mobile Screen upper nav */
+  /* .lower-list ul ul {
+    position: relative;
+    height: auto;
+    background-color: var(--clr-white); */
+  /* display: inline; 
+  }
+*/
+  .upper-nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .logo-toggle-div {
+    display: none;
+  }
+
+  .nav-toggle {
+    font-size: 2.3rem;
+    background: transparent;
+    border: transparent;
+    color: var(--clr-grey-7);
+    cursor: pointer;
+    transition: var(--transition);
+    box-sizing: border-box;
+  }
+
+  .nav-toggle:hover {
+    transform: scale(1.2);
+  }
+
+  .lower-nav {
+    align-items: center;
+  }
+
+  .lower-nav,
+  .lower-nav ul {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  #logo-part {
+    justify-content: space-between;
+    width: 100vw;
+    padding-inline: 2rem;
+  }
+
+  #logo-part img,
+  .nav-toggle {
+    margin-top: -1rem;
+  }
+
+  #logo-part h3 {
+    margin-top: -0.7rem;
+    font-size: 1rem;
+  }
+
+  /* Mobile Screen lower nav styles */
+
+  .lower-nav ul {
+    height: auto;
+    width: 100vw;
+    padding-top: 2rem;
+  }
+
+  .lower-list ul li {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    width: 100%;
+  }
+
+  .lower-list ul li :hover {
+    /* background-color: var(--clr-nigeriaGreen-2);
+    color: var(--clr-white);
+    border-radius: var(--clr-border-radius); */
+    /* padding-top: 0.2rem 0rem; */
+  }
+
+  .lower-list ul li a:hover,
+  .lower-list ul li:hover,
+  .lower-list ul:hover,
+  .first-ul-div,
+  .active:hover {
+    background-color: var(--clr-white);
+  }
+
+  .lower-nav ul li a {
+    font-size: 1rem;
+  }
+
+  .active {
+    background-color: var(--clr-white);
+    color: var(--clr-mdcnbody);
+    padding-bottom: 0rem;
+    /* padding-top: 1rem; */
+  }
+
+  /* INNER DROP DOWN STYLES */
+
+  /* lower nav list drop down container*/
+
+  .lower-list ul ul {
+    position: relative;
+    /* top: 100%;
+    display: none;
+    border-top: 2px solid var(--clr-nigeriaGreen-2);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    width: 22rem;
+    box-shadow: 0px 16px 16px 16px rgba(0, 0, 0, 0.2); */
+  }
+
+  /* lower drop down list*/
+  .lower-nav ul ul li {
+    display: block;
+  }
+
+  /* display dropdow container on  nav list hover */
+  .lower-list ul li:hover ul {
+    display: block;
+  }
+
+  /* Change the background color of dropdown links on hover */
+
+  .lower-list ul ul li a:hover {
+    background-color: var(--clr-light-grey);
+    color: var(--clr-mdcngreen-2);
+    font-weight: bold;
+  }
+
+  /*
+=============== 
+Navbar Heights when toggled for Mobile Screen
+===============
+*/
+
+  .lower-list {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .show-links {
+    height: 390.4px;
+    overflow: visible;
+  }
+}
+
+/*
+=============== 
+Slider styles  Biggest Screen
 ===============
 */
 
@@ -360,27 +529,15 @@ Slider styles
   margin-top: 1rem;
 }
 
-/* #slider-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  height: 100%;
- 
-  width: 85vw;
-  margin: auto;
-} */
-
 #slider-img {
-  height: 32rem;
-  max-width: 75rem;
+  height: 34rem;
+  width: 73rem;
   position: relative;
   background-size: 100% 116%;
   background-position: center;
   background-repeat: no-repeat;
   margin: auto;
-  top: 0.5rem;
+  top: 0.8rem;
 }
 
 #slider-text {
@@ -395,7 +552,7 @@ Slider styles
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin: auto;
-  top: 33.5rem;
+  top: 29rem;
   animation: slider-text-movement 1s 1 ease-in;
 }
 
@@ -414,8 +571,35 @@ Slider styles
 }
 
 /*
+=============== 
+Slider styles  Mobile  Screen
+===============
+*/
+
+#slider-background {
+  border-bottom: 2px solid var(--clr-mdcnred);
+  height: 82.5vh;
+}
+
+@media screen and (max-width: 768px) {
+  #slider-img {
+    height: 22rem;
+    width: 100vw;
+    background-size: 100% 100%;
+  }
+
+  #slider-text {
+    max-width: 95%;
+    text-align: center;
+    font-size: 1.3rem;
+    top: 23rem;
+    /* margin-left: 0.8rem; */
+  }
+}
+
+/*
 ==========================================
-Latest Updates
+Latest Updates Biggest Screen
 =========================================
 */
 
@@ -515,6 +699,16 @@ Latest Updates
 }
 
 /*
+==========================================
+Latest Updates Mobile  Screen
+=========================================
+*/
+@media screen and (max-width: 768px) {
+  #latest-scroll-news-section {
+    display: none;
+  }
+}
+/*
 ========================================= 
 Other Links
 ========================================
@@ -562,12 +756,50 @@ Other Links
 }
 
 /*
+========================================= 
+Other Links  MOBILE SCREEN
+========================================
+*/
+
+@media screen and (max-width: 768px) {
+  #other-links {
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 1rem;
+    width: 90vw;
+  }
+
+  #remita-logo,
+  #portal-logo,
+  .fa-magnifying-glass {
+    display: none;
+  }
+
+  .remita a:hover,
+  .mdcn-portal a:hover,
+  .mdcn-register a:hover {
+    color: var(--clr-mdcngreen-2);
+    text-decoration-color: var(--clr-mdcngreen-2);
+  }
+
+  .fa-magnifying-glass {
+    color: var(--clr-mdcngreen-1);
+    font-size: 1.5rem;
+  }
+}
+
+/*
 ======================================== 
 Registrar Message
 ========================================
 */
 
-.registrar-msg {
+.title {
+  font-size: 1.2rem;
+  color: var(--clr-grey-7);
+}
+
+#registrar-msg {
   display: flex;
   display: flex;
   align-items: flex-start;
@@ -597,6 +829,7 @@ Registrar Message
 .registrar-name {
   position: relative;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .float-paragraph {
@@ -616,6 +849,44 @@ Registrar Message
 .mission,
 .vision {
   color: var(--clr-mdcnred);
+}
+
+/*
+======================================== 
+Registrar Message   MOBILE SCREEN
+========================================
+*/
+
+@media screen and (max-width: 768px) {
+  .registrar-img-and-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #registrar-pix {
+    width: 100%;
+  }
+
+  .registrar-name {
+    font-size: 1.1rem;
+  }
+
+  #registrar-msg {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .registrar,
+  .mission-vision {
+    width: 100%;
+  }
+
+  .float-paragraph,
+  .mission-vision p {
+    font-size: 1.1rem;
+  }
 }
 
 /*
@@ -692,6 +963,42 @@ Recent News
 
 /*
 ======================================== 
+Recent News  MOBILE SCREEN
+========================================
+*/
+@media screen and (max-width: 768px) {
+  #recent-news-container {
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .news-heading {
+    padding-top: 3rem;
+    color: var(--clr-mdcnred);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .news-heading-media {
+    padding-top: 0.5rem;
+  }
+
+  .news-card {
+    width: 100%;
+  }
+
+  .news-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .news-card {
+    font-size: 1.1rem;
+  }
+}
+
+/*
+======================================== 
 Management
 ========================================
 */
@@ -699,6 +1006,11 @@ Management
 .mdcn-management-section {
   min-width: 80vw;
   margin-bottom: 1rem;
+}
+
+.media-caption {
+  color: var(--clr-grey-6);
+  text-transform: capitalize;
 }
 
 #mdcn-management {
@@ -786,7 +1098,7 @@ Management
 
 /*
 ======================================== 
-Footer
+OUTER Footer  
 ========================================
 */
 
@@ -795,11 +1107,6 @@ Footer
 .outer-footer-center a {
   color: var(--clr-white);
   font-size: 0.85rem;
-}
-.inner-footer {
-  height: 42rem;
-
-  background-color: var(--clr-nigeriaGreen-2);
 }
 
 .outer-footer {
@@ -812,7 +1119,7 @@ Footer
 .outer-footer-center {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  /* gap: 7rem; */
   margin-left: auto;
   margin-right: auto;
   text-wrap: wrap;
@@ -825,11 +1132,132 @@ Footer
 .outer-footer-center span {
   font-weight: bolder;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
-.copyright {
-  text-align: center;
+footer {
+  height: 10rem;
+  position: aboslute;
+  bottom: 0;
+}
+
+#quick-links-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#quick-links-div a,
+#issues-div p {
+  padding-bottom: 0.5rem;
+}
+
+#quick-links-div a:hover {
+  color: var(--clr-mdcnred-2);
+}
+
+/*
+======================================== 
+INNER  Footer  
+========================================
+*/
+
+.inner-footer {
+  height: 9rem;
+  width: 100vw;
+  background-color: var(--clr-nigeriaGreen-2);
+  display: flex;
+
+  /* position: relative;
+  bottom: 0;
+  left: 0; */
+}
+
+.inner-footer-center {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  height: 100%;
+}
+
+.copyright,
+.footer-icons {
+  position: relative;
   letter-spacing: 0.08rem;
+  bottom: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+
+.footer-icon:hover {
+  color: var(--clr-mdcnred-2);
+}
+
+/*
+======================================== 
+OUTER AND INNER  Footer  MOBILE SCREEN
+========================================
+*/
+
+@media screen and (max-width: 768px) {
+  .inner-footer-center,
+  .outer-footer-center {
+    width: 90vw;
+  }
+
+  .inner-footer,
+  .outer-footer,
+  .outer-footer-center a {
+    font-size: 1rem;
+  }
+
+  .outer-footer {
+    height: auto;
+  }
+
+  .outer-footer-center {
+    flex-direction: column;
+  }
+
+  .outer-footer span {
+    font-size: 1.3rem;
+  }
+
+  .outer-footer p {
+    font-size: 1.1rem;
+  }
+
+  #mdcn-address-div,
+  #quick-links-div,
+  #issues-div {
+    margin-bottom: 3rem;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+
+  .footer-icons {
+    display: none;
+  }
 }
 
 /*
@@ -841,13 +1269,14 @@ Sticky Lower Navbar style
 .sticky {
   position: fixed;
   width: 100vw;
-  height: 7vh;
+  height: 9vh;
   background-color: var(--clr-white);
   margin-top: -2rem;
+  border-bottom: 2px solid green;
 }
 
 /*  lower nav list links*/
 .stickytest {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4.35rem;
 }
